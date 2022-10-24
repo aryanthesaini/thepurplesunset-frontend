@@ -15,6 +15,7 @@ import { useEffect } from 'react';
 import PacmanLoader from 'react-spinners/PacmanLoader';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import { v4 as uuid } from 'uuid';
 
 export default function ProductDetails() {
   //usestate
@@ -37,7 +38,7 @@ export default function ProductDetails() {
   });
 
   const { data, fetching, error } = results;
-
+  const unique_id = uuid();
   //check for the data coming in
 
   if (fetching)
@@ -73,7 +74,7 @@ export default function ProductDetails() {
       <CarouselWrapper>
         <Carousel showThumbs={false}>
           {image.data.map((img) => (
-            <div>
+            <div key={uuid()}>
               <img src={img.attributes.formats.small.url} alt='' />
             </div>
           ))}

@@ -77,7 +77,7 @@ export default function Cart() {
         <Cards layout variants={cards} initial='hidden' animate='show'>
           {cartItems.length >= 1 &&
             cartItems.map((item) => {
-              console.log(item);
+              // console.log(item);
               return (
                 <Card layout variants={card} key={item.slug}>
                   <img
