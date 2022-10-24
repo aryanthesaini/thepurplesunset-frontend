@@ -6,12 +6,15 @@ import {
   ProductInfo,
   Quantity,
   Buy,
+  CarouselWrapper,
 } from '../../styles/ProductDetails';
 import { AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai';
 import { useStateContext } from '../../lib/context';
 import toast from 'react-hot-toast';
 import { useEffect } from 'react';
 import PacmanLoader from 'react-spinners/PacmanLoader';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
 
 export default function ProductDetails() {
   //usestate
@@ -67,7 +70,15 @@ export default function ProductDetails() {
 
   return (
     <DetailsStyle>
-      <img src={image.data.attributes.formats.small.url} alt={title} />
+      <CarouselWrapper>
+        <Carousel showThumbs={false}>
+          {image.data.map((img) => (
+            <div>
+              <img src={img.attributes.formats.small.url} alt='' />
+            </div>
+          ))}
+        </Carousel>
+      </CarouselWrapper>
       <ProductInfo>
         <h2>{title}</h2>
         <br />

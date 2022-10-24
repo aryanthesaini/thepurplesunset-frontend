@@ -1,16 +1,23 @@
 import styled from 'styled-components';
 
+export const CarouselWrapper = styled.div`
+  width: 50%;
+  @media (max-width: 1028px) {
+    width: 100%;
+  }
+`;
+
 export const DetailsStyle = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 5rem;
   font-weight: 300;
+
   img {
-    width: 40%;
     margin: 0rem 5%;
   }
 
-  @media (max-width: 1024px) {
+  @media (max-width: 1028px) {
     display: inline;
 
     img {

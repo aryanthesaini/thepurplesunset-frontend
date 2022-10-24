@@ -31,7 +31,7 @@ export default async function handler(req, res) {
                 currency: 'inr',
                 product_data: {
                   name: item.title,
-                  images: [item.image.data.attributes.formats.thumbnail.url],
+                  images: [item.image.data[0].attributes.formats.thumbnail.url],
                 },
                 unit_amount: item.price * 100,
               },
@@ -76,7 +76,7 @@ export default async function handler(req, res) {
                 currency: 'inr',
                 product_data: {
                   name: item.title,
-                  images: [item.image.data.attributes.formats.thumbnail.url],
+                  images: [item.image.data[0].attributes.formats.thumbnail.url],
                 },
                 unit_amount: item.price * 100,
               },
