@@ -56,7 +56,7 @@ export default function FooterMain() {
 }
 
 const Footer = styled.div`
-  margin-top: 8rem;
+  margin-top: 30rem;
   background-color: #24262b;
   padding: 30px 0;
 `;
