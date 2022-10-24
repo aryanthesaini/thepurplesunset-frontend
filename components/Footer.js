@@ -15,6 +15,19 @@ export default function FooterMain() {
       <Container>
         <Row>
           <ColFooter>
+            {' '}
+            <div
+              onClick={() => route.push('/about')}
+              style={{
+                color: 'white',
+                fontWeight: 'bolder',
+                cursor: 'pointer',
+              }}>
+              ABOUT US
+            </div>
+          </ColFooter>
+
+          <ColFooter>
             <h4>Reach out to us</h4>
             <div className='social-links'>
               <a href='#'>
