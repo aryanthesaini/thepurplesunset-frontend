@@ -4,9 +4,8 @@ import purple2 from '../public/purple2.jpg';
 import styled from 'styled-components';
 const { motion } = require('framer-motion');
 
-export default function About({ order }) {
+export default function About() {
   const route = useRouter();
-  // console.log(order);
   return (
     <Wrapper>
       <Card
