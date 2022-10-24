@@ -107,37 +107,3 @@ const Card = styled(motion.div)`
     }
   }
 `;
-
-const Address = styled.div`
-  font-size: 1rem;
-  width: 100%;
-  margin-right: 2rem;
-  @media (max-width: 1024px) {
-    h2 {
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    font-size: 0.5rem;
-  }
-`;
-
-const OrderInfo = styled.div`
-  font-size: 1rem;
-  width: 100%;
-
-  div {
-    padding-bottom: 1rem;
-  }
-  @media (max-width: 1024px) {
-    h2 {
-      margin-bottom: 2rem;
-      font-size: 1rem;
-    }
-    font-size: 0.5rem;
-  }
-`;
-
-const InfoWrapper = styled.div`
-  display: flex;
-  margin: 2rem 0rem;
-`;
