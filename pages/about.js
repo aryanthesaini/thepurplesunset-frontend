@@ -21,16 +21,16 @@ export default function About() {
         <p>
           The Purple Sunset is a story of a girl who coloured her skies purple,
           no matter how many times people told her not to, told her that purple
-          doesn't belong to evening sky falls. Art has always been her way to
-          rebel, revolt, and her way to love. It is through art that she
-          realised that sunsets aren't supposed to be the sad endings to dying
-          skies as her childhood self imagined them to be, so she made them her
-          beginnings. From making birthday cards to bookmarks out of dead
-          flowers for her friends, she always found a way of colouring hearts
-          purple. She gifted her friends and family and strangers with purple
-          love wrapped in handmade sunsets. From open when letters to handmade
-          candles to meaningful gifts to lamps and lights and frames and
-          chocolates, from birthday gift boxes to festive hampers, she has
+          doesn&apos;t belong to evening sky falls. Art has always been her way
+          to rebel, revolt, and her way to love. It is through art that she
+          realised that sunsets aren&apos;t supposed to be the sad endings to
+          dying skies as her childhood self imagined them to be, so she made
+          them her beginnings. From making birthday cards to bookmarks out of
+          dead flowers for her friends, she always found a way of colouring
+          hearts purple. She gifted her friends and family and strangers with
+          purple love wrapped in handmade sunsets. From open when letters to
+          handmade candles to meaningful gifts to lamps and lights and frames
+          and chocolates, from birthday gift boxes to festive hampers, she has
           something purple for every occasion when you feel the need to let
           someone know you love them, that they make this black and white world
           colourful, that they add purple to your skies. The Purple Sunset
