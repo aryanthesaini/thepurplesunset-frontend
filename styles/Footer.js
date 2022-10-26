@@ -38,6 +38,27 @@ export const Container = styled.div`
     align-items: center;
     margin-top: 2rem;
   }
+
+  @media (max-width: 1024px) {
+    .instaPic {
+      cursor: pointer;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.unsplash.com/photo-1533371452382-d45a9da51ad9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80');
+      background-size: cover;
+      background-position: center;
+
+      height: 15vh;
+    }
+    .instaDetail {
+      color: white;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: auto;
+      padding-top: 3rem;
+      font-size: large;
+      font-weight: 200;
+    }
+  }
 `;
 export const Row = styled.div`
   display: flex;
