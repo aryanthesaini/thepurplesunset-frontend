@@ -72,7 +72,7 @@ export const Categories = styled.div`
     transform: translate(0%, 0%);
     width: 100%;
     height: 100%;
-    background: #b24bf3;
+    background: #3c144f;
     border-radius: 10px;
   }
 
