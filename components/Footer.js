@@ -49,7 +49,7 @@ export default function FooterMain() {
               <a href='#'>
                 <IoLogoWhatsapp
                   onClick={() => {
-                    route.push('https://wa.me/9582875455');
+                    route.push('https://wa.me/919582875455');
                   }}
                 />
               </a>
