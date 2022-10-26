@@ -22,6 +22,7 @@ export const DetailsStyle = styled.div`
 
     img {
       width: 90%;
+      margin: 0rem;
     }
   }
 `;

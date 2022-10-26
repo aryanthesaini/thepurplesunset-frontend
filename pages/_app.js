@@ -16,6 +16,7 @@ function MyApp({ Component, pageProps }) {
           <Toaster />
           <Nav />
           <Component {...pageProps} />
+
           <FooterMain />
         </Provider>
       </StateContext>
