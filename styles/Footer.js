@@ -47,7 +47,7 @@ export const Container = styled.div`
       background-size: cover;
       background-position: center;
 
-      height: 15vh;
+      height: 25vh;
     }
     .instaDetail {
       color: white;
