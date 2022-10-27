@@ -34,7 +34,7 @@ const HeaderStyle = styled(motion.div)`
   font-weight: 300;
 
   @media (max-width: 768px) {
-    height: 12vh;
+    height: 10vh;
   }
 `;
 

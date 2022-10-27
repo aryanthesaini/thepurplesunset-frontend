@@ -11,8 +11,6 @@ import {
 import { useRouter } from 'next/router';
 
 export default function FooterMain() {
-  const route = useRouter();
-
   return (
     <Footer>
       <Container>

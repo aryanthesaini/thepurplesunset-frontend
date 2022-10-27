@@ -32,26 +32,31 @@ export const Gallery = styled.div`
 export const Categories = styled.div`
   display: flex;
   justify-content: center;
-  margin: 0rem 5%;
+  margin: 0rem 20%;
   margin-bottom: 4rem;
-
+  background: linear-gradient(
+    90deg,
+    rgba(226, 197, 228, 1) 0%,
+    rgba(221, 132, 215, 1) 53%,
+    rgba(189, 161, 209, 1) 100%
+  );
+  border-radius: 4rem;
   .button-86 {
     all: unset;
     width: 10%;
     height: 30px;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     background: transparent;
     border: none;
     position: relative;
-    color: #f0f0f0;
+    color: black;
     cursor: pointer;
     z-index: 1;
     padding: 10px 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    white-space: nowrap;
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
@@ -72,14 +77,14 @@ export const Categories = styled.div`
     transform: translate(0%, 0%);
     width: 100%;
     height: 100%;
-    background: #3c144f;
+
     border-radius: 10px;
   }
 
   .button-86::after {
     transform: translate(10px, 10px);
-    width: 35px;
-    height: 35px;
+    width: 0px;
+    height: 0px;
     background: #ffffff15;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
@@ -105,17 +110,19 @@ export const Categories = styled.div`
   }
 
   @media (max-width: 768px) {
+    margin: 0rem 5%;
     margin-bottom: 2rem;
+
     .button-86 {
       all: unset;
       width: 5%;
       height: 20px;
       font-size: 12px;
-      font-weight: 300;
+
       background: transparent;
       border: none;
       position: relative;
-      color: #f0f0f0;
+      color: black;
       cursor: pointer;
       z-index: 1;
       padding: 5px 20px;
@@ -126,13 +133,13 @@ export const Categories = styled.div`
       user-select: none;
       -webkit-user-select: none;
       touch-action: manipulation;
-      margin: 0rem 0.5rem;
+      margin: 0rem 0.2rem;
     }
 
     .button-86::after {
       transform: translate(10px, 10px);
-      width: 20px;
-      height: 20px;
+      width: 0px;
+      height: 0px;
       background: #ffffff15;
       backdrop-filter: blur(5px);
       -webkit-backdrop-filter: blur(5px);
