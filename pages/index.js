@@ -5,8 +5,12 @@ import { PRODUCT_QUERY } from '../lib/query';
 import { Gallery, Categories } from '../styles/Gallery';
 import PacmanLoader from 'react-spinners/PacmanLoader';
 import { useStateContext } from '../lib/context';
+import { IoLogoWhatsapp } from 'react-icons/io5';
+const { motion } = require('framer-motion');
+import { useRouter } from 'next/router';
 export default function Home() {
   //fetch products from strapi
+  const route = useRouter();
 
   const [results] = useQuery({ query: PRODUCT_QUERY });
   const { data, fetching, error } = results;
@@ -31,6 +35,7 @@ export default function Home() {
         data-testid='loader'
       />
     );
+
   if (error) <p>OH NO... {error.message}</p>;
   const products = data.products.data;
   // console.log(products);
@@ -80,6 +85,20 @@ export default function Home() {
             Misc
           </button>
         </Categories>
+        <motion.div drag style={{ zIndex: '400', position: 'absolute' }}>
+          <IoLogoWhatsapp
+            style={{
+              padding: '3rem, 3rem',
+              background: 'Green',
+              fontSize: '4rem',
+              borderRadius: '50%',
+              cursor: 'grabbing',
+            }}
+            onClick={() => {
+              route.push('https://wa.me/919582875455');
+            }}
+          />
+        </motion.div>
 
         <Gallery>
           {products.map((product) => (
