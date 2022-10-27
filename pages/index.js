@@ -85,7 +85,10 @@ export default function Home() {
             Misc
           </button>
         </Categories>
-        <motion.div drag style={{ zIndex: '400', position: 'absolute' }}>
+        <motion.div
+          drag
+          dragElastic={2}
+          style={{ zIndex: '400', position: 'absolute' }}>
           <IoLogoWhatsapp
             style={{
               padding: '3rem, 3rem',
