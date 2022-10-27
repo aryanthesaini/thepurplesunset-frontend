@@ -86,19 +86,23 @@ export default function Home() {
           </button>
         </Categories>
         <motion.div
-          drag
+          drag='y'
           dragElastic={2}
+          dragConstraints={{
+            bottom: 1000,
+            top: 0,
+          }}
           style={{ zIndex: '400', position: 'absolute' }}>
           <IoLogoWhatsapp
             style={{
               padding: '3rem, 3rem',
-              background: 'Green',
-              fontSize: '4rem',
+              background: '#54b354',
+              fontSize: '3rem',
               borderRadius: '50%',
               cursor: 'grabbing',
             }}
             onClick={() => {
-              route.push('https://wa.me/919582875455');
+              // route.push('https://wa.me/919582875455');
             }}
           />
         </motion.div>
