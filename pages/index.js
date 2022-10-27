@@ -85,7 +85,7 @@ export default function Home() {
             Misc
           </button>
         </Categories>
-        <motion.div
+        {/* <motion.div
           drag='y'
           dragElastic={2}
           dragConstraints={{
@@ -105,7 +105,7 @@ export default function Home() {
               // route.push('https://wa.me/919582875455');
             }}
           />
-        </motion.div>
+        </motion.div> */}
 
         <Gallery>
           {products.map((product) => (
