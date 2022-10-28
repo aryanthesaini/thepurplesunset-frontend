@@ -100,3 +100,36 @@ export const Buy = styled.button`
   font-weight: lighter;
   border: none;
 `;
+
+export const CustomName = styled.input`
+  font-size: 1.2rem;
+  border: none;
+  background: none;
+  border-bottom: 1px solid black;
+  font-weight: 300;
+  margin-right: 5%;
+  @media (max-width: 1024px) {
+    font-size: 1rem;
+    height: 40px;
+    transform: translateY(25px);
+  }
+`;
+
+export const NameDiv = styled.div`
+  display: flex;
+
+  margin-bottom: 2rem;
+
+  h2 {
+    font-weight: 300;
+    margin-right: 2rem;
+  }
+
+  @media (max-width: 1024px) {
+    h2 {
+      font-size: medium;
+      font-weight: 300;
+      margin-right: 1.4rem;
+    }
+  }
+`;

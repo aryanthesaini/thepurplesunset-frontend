@@ -4,6 +4,7 @@ import { getSession } from '@auth0/nextjs-auth0';
 
 export default async function handler(req, res) {
   const session = getSession(req, res);
+  // console.log(req.body);
   const user = session?.user;
   if (user) {
     const stripeId = user['http://localhost:3000/stripe_customer_id'];
@@ -25,12 +26,13 @@ export default async function handler(req, res) {
             },
             { shipping_rate: 'shr_1LvNzxSFpNw6dEss08hn4J0g' },
           ],
+
           line_items: req.body.map((item) => {
             return {
               price_data: {
                 currency: 'inr',
                 product_data: {
-                  name: item.title,
+                  name: `${item.title} and custom name ${item.name}`,
                   images: [item.image.data[0].attributes.formats.thumbnail.url],
                 },
                 unit_amount: item.price * 100,
@@ -75,7 +77,7 @@ export default async function handler(req, res) {
               price_data: {
                 currency: 'inr',
                 product_data: {
-                  name: item.title,
+                  name: `${item.title} (for ${item.name})`,
                   images: [item.image.data[0].attributes.formats.thumbnail.url],
                 },
                 unit_amount: item.price * 100,

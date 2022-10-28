@@ -95,6 +95,7 @@ export default function Cart() {
                         <AiFillMinusCircle />
                       </button>
                       <p> {item.quantity} </p>
+                      {/* <p> {item.name} </p> */}
                       <button
                         onClick={() => {
                           onAdd(item, 1);
