@@ -2,12 +2,7 @@ import styled from 'styled-components';
 const { motion } = require('framer-motion');
 
 export const ProductStyle = styled(motion.div)`
-  background: linear-gradient(
-    90deg,
-    rgba(226, 197, 228, 1) 100%,
-    rgba(221, 132, 215, 1) 3%,
-    rgba(189, 161, 209, 1) 100%
-  );
+  background: #ffffff33;
   position: relative;
   display: flex;
   flex-direction: column;
