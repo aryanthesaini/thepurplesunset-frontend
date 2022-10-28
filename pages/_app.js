@@ -18,8 +18,6 @@ function MyApp({ Component, pageProps }) {
           <Header />
           <Nav />
           <Component {...pageProps} />
-
-          <FooterMain />
         </Provider>
       </StateContext>
     </UserProvider>

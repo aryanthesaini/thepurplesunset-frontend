@@ -8,6 +8,8 @@ import { useStateContext } from '../lib/context';
 import { IoLogoWhatsapp } from 'react-icons/io5';
 const { motion } = require('framer-motion');
 import { useRouter } from 'next/router';
+import Footer from '../components/Footer';
+
 export default function Home() {
   //fetch products from strapi
   const route = useRouter();
@@ -113,6 +115,7 @@ export default function Home() {
           ))}
         </Gallery>
       </main>
+      <Footer />
     </div>
   );
 }

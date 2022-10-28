@@ -20,11 +20,11 @@ export const Gallery = styled.div`
     grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1rem;
     h2 {
-      font-size: 0.8rem;
+      font-size: 1.2rem;
     }
     h3 {
-      font-size: 0.7rem;
-      font-weight: 300;
+      font-size: 0.8rem;
+      font-weight: 600;
     }
   }
 `;
