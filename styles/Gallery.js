@@ -17,7 +17,7 @@ export const Gallery = styled.div`
     grid-gap: 1rem;
   }
   @media (max-width: 425px) {
-    grid-template-columns: repeat(auto-fit, minmax(8rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     grid-gap: 1rem;
     h2 {
       font-size: 0.8rem;
