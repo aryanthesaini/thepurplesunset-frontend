@@ -18,6 +18,7 @@ import PacmanLoader from 'react-spinners/PacmanLoader';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { v4 as uuid } from 'uuid';
+import Footer from '../../components/Footer';
 
 export default function ProductDetails() {
   //usestate
@@ -77,23 +78,24 @@ export default function ProductDetails() {
   };
 
   return (
-    <DetailsStyle>
-      <CarouselWrapper>
-        <Carousel showThumbs={false}>
-          {image.data.map((img) => (
-            <div key={uuid()}>
-              <img src={img.attributes.formats.small.url} alt='' />
-            </div>
-          ))}
-        </Carousel>
-      </CarouselWrapper>
-      <ProductInfo>
-        <h2>{title}</h2>
-        <br />
-        <h4>₹ {price}</h4>
-        <br />
-        <p>{description}</p>
-        {/* <Quantity>
+    <div>
+      <DetailsStyle>
+        <CarouselWrapper>
+          <Carousel showThumbs={false}>
+            {image.data.map((img) => (
+              <div key={uuid()}>
+                <img src={img.attributes.formats.small.url} alt='' />
+              </div>
+            ))}
+          </Carousel>
+        </CarouselWrapper>
+        <ProductInfo>
+          <h2>{title}</h2>
+          <br />
+          <h4>₹ {price}</h4>
+          <br />
+          <p>{description}</p>
+          {/* <Quantity>
           <span>Quantity</span>
           <button>
             <AiFillMinusCircle onClick={decreaseQty} />
@@ -103,7 +105,7 @@ export default function ProductDetails() {
             <AiFillPlusCircle onClick={increaseQty} />
           </button>
         </Quantity>{' '} */}
-        {/* <NameDiv>
+          {/* <NameDiv>
           <h2> Customise the name on this order:</h2>
 
           <CustomName
@@ -112,7 +114,7 @@ export default function ProductDetails() {
             onChange={(e) => handleSetName(e)}
           />
         </NameDiv> */}
-        {/* <Buy
+          {/* <Buy
           onClick={() => {
             // console.log(name);
 
@@ -121,7 +123,9 @@ export default function ProductDetails() {
           }}>
           ADD TO CART
         </Buy> */}
-      </ProductInfo>
-    </DetailsStyle>
+        </ProductInfo>
+      </DetailsStyle>
+      <Footer />
+    </div>
   );
 }
