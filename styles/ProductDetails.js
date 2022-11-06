@@ -11,6 +11,7 @@ export const DetailsStyle = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 5rem;
+  margin-bottom: 4rem;
   font-weight: 300;
 
   img {
