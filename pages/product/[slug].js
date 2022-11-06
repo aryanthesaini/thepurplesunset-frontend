@@ -93,7 +93,7 @@ export default function ProductDetails() {
         <h4>₹ {price}</h4>
         <br />
         <p>{description}</p>
-        <Quantity>
+        {/* <Quantity>
           <span>Quantity</span>
           <button>
             <AiFillMinusCircle onClick={decreaseQty} />
@@ -102,8 +102,8 @@ export default function ProductDetails() {
           <button>
             <AiFillPlusCircle onClick={increaseQty} />
           </button>
-        </Quantity>{' '}
-        <NameDiv>
+        </Quantity>{' '} */}
+        {/* <NameDiv>
           <h2> Customise the name on this order:</h2>
 
           <CustomName
@@ -111,8 +111,8 @@ export default function ProductDetails() {
             placeholder='Name'
             onChange={(e) => handleSetName(e)}
           />
-        </NameDiv>
-        <Buy
+        </NameDiv> */}
+        {/* <Buy
           onClick={() => {
             // console.log(name);
 
@@ -120,7 +120,7 @@ export default function ProductDetails() {
             notify();
           }}>
           ADD TO CART
-        </Buy>
+        </Buy> */}
       </ProductInfo>
     </DetailsStyle>
   );
