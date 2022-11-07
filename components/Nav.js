@@ -26,8 +26,8 @@ export default function Nav() {
               {totalQuantities}
             </motion.span>
           )}
-          {/* <FiShoppingBag /> */}
-          {/* <h3>Cart</h3> */}
+          <FiShoppingBag />
+          <h3>Cart</h3>
         </div>
       </NavItems>
       <AnimatePresence>{showCart && <Cart />}</AnimatePresence>

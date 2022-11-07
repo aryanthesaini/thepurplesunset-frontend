@@ -95,34 +95,34 @@ export default function ProductDetails() {
           <h4>₹ {price}</h4>
           <br />
           <p>{description}</p>
-          {/* <Quantity>
-          <span>Quantity</span>
-          <button>
-            <AiFillMinusCircle onClick={decreaseQty} />
-          </button>
-          <p>{qty}</p>
-          <button>
-            <AiFillPlusCircle onClick={increaseQty} />
-          </button>
-        </Quantity>{' '} */}
-          {/* <NameDiv>
-          <h2> Customise the name on this order:</h2>
+          <Quantity>
+            <span>Quantity</span>
+            <button>
+              <AiFillMinusCircle onClick={decreaseQty} />
+            </button>
+            <p>{qty}</p>
+            <button>
+              <AiFillPlusCircle onClick={increaseQty} />
+            </button>
+          </Quantity>{' '}
+          <NameDiv>
+            <h2> Customise the name on this order:</h2>
 
-          <CustomName
-            type='text'
-            placeholder='Name'
-            onChange={(e) => handleSetName(e)}
-          />
-        </NameDiv> */}
-          {/* <Buy
-          onClick={() => {
-            // console.log(name);
+            <CustomName
+              type='text'
+              placeholder='Name'
+              onChange={(e) => handleSetName(e)}
+            />
+          </NameDiv>
+          <Buy
+            onClick={() => {
+              // console.log(name);
 
-            onAdd(data.products.data[0].attributes, qty, name);
-            notify();
-          }}>
-          ADD TO CART
-        </Buy> */}
+              onAdd(data.products.data[0].attributes, qty, name);
+              notify();
+            }}>
+            ADD TO CART
+          </Buy>
         </ProductInfo>
       </DetailsStyle>
       <Footer />
