@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const CarouselWrapper = styled.div`
   width: 50%;
+
   @media (max-width: 1028px) {
     width: 100%;
   }
@@ -30,6 +31,7 @@ export const DetailsStyle = styled.div`
 
 export const ProductInfo = styled.div`
   font-weight: 300;
+
   width: 40%;
   button {
     font-size: 1rem;
