@@ -99,8 +99,8 @@ export const Quantity = styled.div`
 `;
 
 export const Buy = styled.button`
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
   margin-top: 3rem;
   width: 80%;
   background: var(--primary);
