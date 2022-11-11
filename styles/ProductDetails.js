@@ -44,16 +44,18 @@ export const ProductInfo = styled.div`
     display: inline;
     width: 90%;
     h2 {
-      font-weight: 400;
+      font-weight: 700;
       margin: 0rem 5%;
       margin-top: 2rem;
+      font-size: 1rem;
     }
     p {
       margin: 0rem 5%;
     }
     h4 {
-      font-weight: 300;
+      font-weight: 500;
       margin: 0rem 5%;
+      font-size: 2rem;
     }
   }
 `;
@@ -97,11 +99,15 @@ export const Quantity = styled.div`
 `;
 
 export const Buy = styled.button`
-  width: 100%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 3rem;
+  width: 80%;
   background: var(--primary);
   color: white;
   font-weight: lighter;
   border: none;
+  border-radius: 4px;
 `;
 
 export const CustomName = styled.input`

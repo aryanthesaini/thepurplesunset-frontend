@@ -84,7 +84,13 @@ export default function ProductDetails() {
           <Carousel showThumbs={false}>
             {image.data.map((img) => (
               <div key={uuid()}>
-                <img src={img.attributes.formats.small.url} alt='' />
+                <img
+                  style={{
+                    boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
+                  }}
+                  src={img.attributes.formats.small.url}
+                  alt=''
+                />
               </div>
             ))}
           </Carousel>
