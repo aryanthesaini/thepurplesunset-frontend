@@ -36,9 +36,8 @@ export const Categories = styled.div`
   margin-bottom: 4rem;
   background: linear-gradient(
     90deg,
-    rgba(226, 197, 228, 1) 0%,
-    rgba(221, 132, 215, 1) 53%,
-    rgba(189, 161, 209, 1) 100%
+    hsla(212, 35%, 58%, 1) 0%,
+    hsla(218, 32%, 80%, 1) 100%
   );
   border-radius: 4rem;
   .button-86 {

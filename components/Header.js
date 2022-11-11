@@ -27,9 +27,8 @@ const HeaderStyle = styled(motion.div)`
   height: 15vh;
   background: linear-gradient(
     90deg,
-    rgba(226, 197, 228, 1) 0%,
-    rgba(221, 132, 215, 1) 53%,
-    rgba(189, 161, 209, 1) 100%
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
   );
   font-weight: 300;
 
