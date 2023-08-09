@@ -16,7 +16,7 @@ function MyApp({ Component, pageProps }) {
       <StateContext>
         <Provider value={client}>
           <Toaster />
-          <LandingPage />
+          {/* <LandingPage /> */}
           <Header />
           <Nav />
           <Component {...pageProps} />
